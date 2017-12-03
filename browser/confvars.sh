@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-MOZ_APP_BASENAME=Firefox
-MOZ_APP_VENDOR=Mozilla
+MOZ_APP_BASENAME=Quokka
+MOZ_APP_VENDOR=Anima
 MOZ_UPDATER=1
 MOZ_PHOENIX=1
 
@@ -61,8 +61,9 @@ else
 fi
 MOZ_PROFILE_MIGRATOR=1
 
-# Enable checking that add-ons are signed by the trusted root
-MOZ_ADDON_SIGNING=1
+# (Temporarily) Disable checking that add-ons are signed by the trusted root
+MOZ_ADDON_SIGNING=0
+MOZ_REQUIRE_SIGNING=0
 
 # Include the DevTools client, not just the server (which is the default)
 MOZ_DEVTOOLS=all

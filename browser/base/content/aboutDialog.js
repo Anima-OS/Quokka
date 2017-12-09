@@ -32,14 +32,13 @@ function init(aEvent) {
 
   // Include the build ID and display warning if this is an "a#" (nightly or aurora) build
   let versionField = document.getElementById("version");
+  let buildField = document.getElementById("build");
   let version = Services.appinfo.version;
-  if (/a\d+$/.test(version)) {
-    let buildID = Services.appinfo.appBuildID;
-    let year = buildID.slice(0, 4);
-    let month = buildID.slice(4, 6);
-    let day = buildID.slice(6, 8);
-    versionField.textContent += ` (${year}-${month}-${day})`;
+  let buildID = Services.appinfo.appBuildID;
+  
+  buildField.textContent += `(${buildID})`;
 
+  if (/a\d+$/.test(version)) {
     document.getElementById("experimental").hidden = false;
     document.getElementById("communityDesc").hidden = true;
   }

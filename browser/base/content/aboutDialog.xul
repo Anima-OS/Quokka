@@ -49,6 +49,7 @@
           <label id="releasenotes" class="text-link" hidden="true">&releaseNotes.link;</label>
         </hbox>
 
+        <label id="build"></label>
         <label id="distribution" class="text-blurb"/>
         <label id="distributionId" class="text-blurb"/>
 

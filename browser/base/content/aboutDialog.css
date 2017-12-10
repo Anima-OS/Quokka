@@ -26,13 +26,19 @@
   padding: 15px 10px 0;
 }
 
-#version {
+#version,
+#build {
   font-weight: bold;
   margin-top: 10px;
   margin-left: 0;
   -moz-user-select: text;
   -moz-user-focus: normal;
   cursor: text;
+}
+
+#build {
+  font-style: italic;
+  font-weight: lighter;
 }
 
 #version:-moz-locale-dir(rtl) {

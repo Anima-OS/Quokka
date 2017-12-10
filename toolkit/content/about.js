@@ -19,14 +19,20 @@ if (vendorURL != "about:blank") {
 }
 
 // insert the version of the XUL application (!= XULRunner platform version)
-var versionNum = Components.classes["@mozilla.org/xre/app-info;1"]
-                           .getService(Components.interfaces.nsIXULAppInfo)
-                           .version;
+var versionNum = Components.utils
+                           .import("resource://gre/modules/AppConstants.jsm")
+                           .AppConstants.MOZ_APP_VERSION_DISPLAY;
 var version = document.getElementById("version");
 version.textContent += " " + versionNum;
+
+var buildNum = Components.utils
+                            .import("resource://gre/modules/Services.jsm")
+                            .Services.appinfo.appBuildID;
+var build = document.getElementById("build")
+build.textContent += buildNum;
 
 // append user agent
 var ua = navigator.userAgent;
 if (ua) {
-  document.getElementById("buildID").textContent += " " + ua;
+  document.getElementById("userAgent").textContent += " " + ua;
 }

@@ -35,9 +35,9 @@ def repackage_installer(topsrcdir, tag, setupexe, package, output):
         # unpacked (the tmpdir)
         os.chdir(tmpdir)
 
-        sfx_package = mozpath.join(topsrcdir, 'other-licenses/7zstub/firefox/7zSD.sfx')
+        sfx_package = mozpath.join(topsrcdir, 'other-licenses/7zstub/quokka/7zSD.sfx')
 
-        package_name = 'firefox' if package else None
+        package_name = 'quokka' if package else None
         archive_exe(package_name, tag, sfx_package, output)
 
     finally:

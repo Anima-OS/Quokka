@@ -53,7 +53,7 @@ static const RedirEntry kRedirMap[] = {
   { "crashes", "chrome://global/content/crashes.xhtml", 0 },
 #endif
   {
-    "credits", "https://www.mozilla.org/credits/",
+    "credits", "https://anima-os.github.io/aboutCredits/",
     nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT
   },
   {

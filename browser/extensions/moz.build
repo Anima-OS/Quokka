@@ -11,6 +11,7 @@ DIRS += [
     'e10srollout',
     'followonsearch',
     'formautofill',
+    'netflix1080',
     'onboarding',
     'pdfjs',
     'pocket',

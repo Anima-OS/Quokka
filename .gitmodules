@@ -1,0 +1,3 @@
+[submodule "browser/extensions/netflix1080"]
+	path = browser/extensions/netflix1080
+	url = https://github.com/Anima-OS/Netflix1080.git

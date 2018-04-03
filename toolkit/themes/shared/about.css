@@ -48,6 +48,10 @@ img {
   margin: -4px 0 9px 17px;
 }
 
+#name {
+  margin: -200px 0 20px 15px;
+}
+
 ul {
   margin: 0;
   margin-inline-start: 1.5em;

@@ -62,8 +62,7 @@ static const RedirEntry kRedirMap[] = {
       nsIAboutModule::MAKE_LINKABLE
   },
   {
-    "logo", "chrome://branding/content/about.png",
-    nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT |
+    "logo", "chrome://branding/content/about.svg",
     // Linkable for testing reasons.
     nsIAboutModule::MAKE_LINKABLE
   },
